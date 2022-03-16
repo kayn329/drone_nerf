@@ -1,0 +1,16 @@
+expname = segmented_v2_test
+basedir = ./logs
+datadir = ./data/nerf_llff_data/segmented_v2
+dataset_type = llff
+factor = 8
+llffhold = 2
+N_rand = 500
+N_samples = 32
+N_importance = 32
+use_viewdirs = True
+raw_noise_std = 1e0
+no_ndc = True
+lindisp = True
+spherify = True
+no_batching = False
+white_bkgd=False
