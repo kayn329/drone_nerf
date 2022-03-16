@@ -9,6 +9,8 @@ To segment our images, we run <insert script name here>, and to convert our pose
 In our training we use the [NeRF codebase](https://github.com/bmild/nerf) with our own config files located in the training folder.<br>
 ## Results<br>
 Inertial Frame poses, Unsegmented images, Hand-held test images:<br>
+![alt text](https://github.com/kayn329/drone_nerf/blob/main/images/nerf_test_1.gif)<br>
+Inertial Frame poses, Segmented images, Hand-held test images:<br>
 ![alt text](https://github.com/kayn329/drone_nerf/blob/main/images/nerf_test_2.gif)<br>
-Relative poses, Segmented images, Hand-held test images:<br>
-![alt text](https://github.com/kayn329/drone_nerf/blob/main/images/nerf_test_segmented.gif)<br>
+Relative Frame poses, Segmented images, Hand-held test images:<br>
+![alt text](https://github.com/kayn329/drone_nerf/blob/main/images/nerf_test_3.gif)<br>
