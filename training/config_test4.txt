@@ -1,0 +1,17 @@
+expname = flight_drone
+basedir = ./logs
+datadir = /home/gsznaier/flight_drone
+dataset_type = llff
+factor = 8
+llffhold = 2
+N_rand = 500
+N_samples = 120
+N_importance = 120
+use_viewdirs = True
+raw_noise_std = 1e0
+no_ndc = True
+lindisp = True
+spherify = True
+no_batching = False
+i_weights=2500
+i_img=1000
