@@ -1,0 +1,20 @@
+expname = target_robot_test_v2
+basedir = ./logs
+datadir = /home/gsznaier/target_robot/nerf_training_data 
+dataset_type = blender
+
+half_res = True
+no_batching = True
+
+lrate_decay = 500
+N_samples = 32
+N_importance = 128
+
+use_viewdirs = True
+
+white_bkgd = True
+
+N_rand = 2048
+precrop_iters = 500
+precrop_frac = 0.5
+chunk=5000
