@@ -4,7 +4,7 @@ Repository for CS231A Final Project. We collect data in hardware in the form of 
 ## Data Collection
 To collect our data, we use the [IntelRealSense ROS Wrapper](https://github.com/IntelRealSense/realsense-ros) to collect images, and rosbag the image topic and pose topics.<br>
 ## Post Processing<br>
-To segment our images, we run `segmentation_code.ipynb`, and to convert our poses to be used for NeRF training we run `convert_poses.py`.<br>
+To segment our images, we run `segmentation_code.ipynb`, and to convert our poses to be used for NeRF training we run `convert_poses.py`. We also generate depth bounds using the [LLFF codebase](https://github.com/fyusion/llff) to use for training.<br>
 ## Training<br>
 In our training we use the [NeRF codebase](https://github.com/bmild/nerf) with our own config files located in the training folder.<br>
 ## Trajectory Generation<br>
