@@ -122,7 +122,7 @@ def convert_drone_poses(relative = False, gen_npy = False, npy_fname = 'poses_bo
     # camera intrinsics
     height = 480.
     width = 640.
-    focal_length = 261.7647204842273
+    focal_length = 261.765
     intrinsics = np.array([height, width, focal_length])
 
     for ii in range(drone_poses.shape[0]):
@@ -137,7 +137,7 @@ def convert_drone_poses(relative = False, gen_npy = False, npy_fname = 'poses_bo
             target_row = target_poses[ii,:]
             target_translation, target_quaternion = target_row[0:3], target_row[3:7]
             target_pose = tf_from_vect(target_quaternion, target_translation)
-            drone_pose = target_pose.T @ drone_pose
+            drone_pose = np.linalg.inv(target_pose) @ drone_pose
 
         # store relative or world pose in original frames
         drone_poses_list.append(drone_pose)
